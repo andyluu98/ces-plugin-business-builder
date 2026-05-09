@@ -1,0 +1,21 @@
+{
+  "id": "ces-business-builder",
+  "name": "CES Business Builder",
+  "version": "1.0.0",
+  "description": "Bộ công cụ AI tạo 191 tài liệu vận hành doanh nghiệp theo 5 tầng quản trị — CES Global",
+  "skills": [
+    { "id": "ces-orchestrator", "name": "CES Orchestrator", "path": "ces-orchestrator" },
+    { "id": "ces-governance", "name": "CES Governance", "path": "ces-governance" },
+    { "id": "ces-strategy", "name": "CES Strategy", "path": "ces-strategy" },
+    { "id": "ces-finance", "name": "CES Finance", "path": "ces-finance" },
+    { "id": "ces-people", "name": "CES People", "path": "ces-people" },
+    { "id": "ces-operations", "name": "CES Operations", "path": "ces-operations" },
+    { "id": "ces-sales", "name": "CES Sales", "path": "ces-sales" },
+    { "id": "ces-marketing", "name": "CES Marketing", "path": "ces-marketing" },
+    { "id": "ces-customer", "name": "CES Customer", "path": "ces-customer" },
+    { "id": "ces-product-tech", "name": "CES Product Tech", "path": "ces-product-tech" },
+    { "id": "ces-training", "name": "CES Training", "path": "ces-training" },
+    { "id": "ces-reporting", "name": "CES Reporting", "path": "ces-reporting" },
+    { "id": "ces-growth", "name": "CES Growth", "path": "ces-growth" }
+  ]
+}
