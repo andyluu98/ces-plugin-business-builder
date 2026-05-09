@@ -1,0 +1,310 @@
+{
+  "name": "ces-business-builder",
+  "version": "1.0.0",
+  "description": "CES Global Business Builder - Bộ công cụ AI tạo 191 tài liệu vận hành doanh nghiệp",
+  "author": "Tuấn Anh — CES Global",
+  "contact": {
+    "email": "cesglobal.pro@gmail.com",
+    "phone": "0911.991.288",
+    "website": "www.cesglobal.com.vn",
+    "address": "222 Nguyễn Văn Tuyết, Đống Đa, Hà Nội"
+  },
+  "metadata": {
+    "releaseDate": "2026-05",
+    "language": "vi",
+    "targetMarket": "Vietnam",
+    "legalFramework": ["Bộ luật Lao động 2019", "Luật Doanh nghiệp 2020", "Luật Kế toán Việt Nam"],
+    "qualityFramework": ["ISO 9001:2015", "EOS", "McKinsey 7S", "Lean Management", "Balanced Scorecard"],
+    "totalDocuments": 191,
+    "totalSkills": 13,
+    "outputFormats": [".docx", ".xlsx"]
+  },
+  "skills": [
+    {
+      "id": "ces-orchestrator",
+      "name": "CES Orchestrator",
+      "layer": 0,
+      "layerName": "Điều Phối",
+      "description": "Điều phối tổng thể quy trình đóng gói doanh nghiệp — thu thập hồ sơ, lập kế hoạch, phân bổ tasks và kiểm tra tính nhất quán xuyên suốt 191 tài liệu",
+      "triggers": [
+        "đóng gói doanh nghiệp",
+        "xây dựng hệ thống tài liệu",
+        "hệ thống hóa doanh nghiệp",
+        "tạo bộ tài liệu vận hành hoàn chỉnh",
+        "xây dựng tài liệu toàn diện"
+      ],
+      "documents": 8,
+      "outputPrefix": "ORK"
+    },
+    {
+      "id": "ces-governance",
+      "name": "CES Governance",
+      "layer": 1,
+      "layerName": "Nền Tảng",
+      "description": "Quản trị & Pháp lý doanh nghiệp — điều lệ công ty, quy chế nội bộ, chính sách tuân thủ, quản lý hợp đồng và hồ sơ pháp lý",
+      "triggers": [
+        "tạo điều lệ công ty",
+        "đóng gói pháp lý",
+        "quản trị doanh nghiệp",
+        "quy chế nội bộ",
+        "chính sách đạo đức kinh doanh",
+        "quản lý rủi ro"
+      ],
+      "documents": 19,
+      "outputPrefix": "GOV",
+      "dependsOn": []
+    },
+    {
+      "id": "ces-strategy",
+      "name": "CES Strategy",
+      "layer": 1,
+      "layerName": "Nền Tảng",
+      "description": "Chiến lược & Kế hoạch kinh doanh — tầm nhìn sứ mệnh, phân tích SWOT, kế hoạch kinh doanh 3 năm, OKR, Balanced Scorecard và chiến lược thị trường",
+      "triggers": [
+        "lập kế hoạch kinh doanh",
+        "phân tích swot",
+        "chiến lược doanh nghiệp",
+        "tầm nhìn sứ mệnh",
+        "okr framework",
+        "business model canvas"
+      ],
+      "documents": 18,
+      "outputPrefix": "STR",
+      "dependsOn": ["ces-governance"]
+    },
+    {
+      "id": "ces-finance",
+      "name": "CES Finance",
+      "layer": 2,
+      "layerName": "Vận Hành",
+      "description": "Tài chính & Kế toán — ngân sách tổng thể, cashflow dự báo, SOP kế toán thu chi, chính sách phê duyệt chi phí, kiểm toán nội bộ và dashboard tài chính",
+      "triggers": [
+        "tạo ngân sách",
+        "cashflow",
+        "sop kế toán",
+        "tài chính doanh nghiệp",
+        "báo cáo tài chính",
+        "chính sách tài chính",
+        "kiểm toán nội bộ"
+      ],
+      "documents": 20,
+      "outputPrefix": "FIN",
+      "dependsOn": ["ces-governance", "ces-strategy"]
+    },
+    {
+      "id": "ces-people",
+      "name": "CES People",
+      "layer": 2,
+      "layerName": "Vận Hành",
+      "description": "Nhân sự & Con người — sơ đồ tổ chức, mô tả công việc, nội quy lao động, sổ tay nhân viên, quy chế lương thưởng, SOP tuyển dụng, đánh giá hiệu suất và offboarding",
+      "triggers": [
+        "sơ đồ tổ chức",
+        "sổ tay nhân viên",
+        "nội quy lao động",
+        "tuyển dụng",
+        "hr",
+        "lương thưởng",
+        "đánh giá hiệu suất",
+        "job description"
+      ],
+      "documents": 22,
+      "outputPrefix": "PPL",
+      "dependsOn": ["ces-governance", "ces-strategy"]
+    },
+    {
+      "id": "ces-operations",
+      "name": "CES Operations",
+      "layer": 2,
+      "layerName": "Vận Hành",
+      "description": "Hành chính & Vận hành — sổ tay vận hành, SOP mua hàng, quản lý kho, quản lý cơ sở vật chất, an toàn lao động, quản lý dự án nội bộ và kiểm soát chất lượng",
+      "triggers": [
+        "tạo sop",
+        "sổ tay vận hành",
+        "quy trình vận hành",
+        "quy trình hành chính",
+        "quản lý kho",
+        "mua hàng nhà cung cấp",
+        "an toàn lao động"
+      ],
+      "documents": 20,
+      "outputPrefix": "OPS",
+      "dependsOn": ["ces-governance", "ces-people", "ces-finance"]
+    },
+    {
+      "id": "ces-sales",
+      "name": "CES Sales",
+      "layer": 3,
+      "layerName": "Tăng Trưởng",
+      "description": "Kinh doanh & Bán hàng — chiến lược sales, quy trình bán hàng end-to-end, kịch bản telesales, chính sách giá, hợp đồng mẫu, CRM và dashboard pipeline",
+      "triggers": [
+        "quy trình bán hàng",
+        "kịch bản sales",
+        "chiến lược kinh doanh",
+        "hợp đồng mua bán",
+        "chính sách giá",
+        "crm",
+        "pipeline bán hàng"
+      ],
+      "documents": 17,
+      "outputPrefix": "SAL",
+      "dependsOn": ["ces-strategy", "ces-finance", "ces-operations"]
+    },
+    {
+      "id": "ces-marketing",
+      "name": "CES Marketing",
+      "layer": 3,
+      "layerName": "Tăng Trưởng",
+      "description": "Marketing & Thương hiệu — chiến lược marketing tổng thể, brand guideline, kế hoạch marketing năm, content calendar, SEO, social media và ROI tracking",
+      "triggers": [
+        "kế hoạch marketing",
+        "content calendar",
+        "chiến lược nội dung",
+        "brand guideline",
+        "seo content",
+        "social media",
+        "ngân sách marketing"
+      ],
+      "documents": 10,
+      "outputPrefix": "MKT",
+      "dependsOn": ["ces-strategy", "ces-sales"]
+    },
+    {
+      "id": "ces-customer",
+      "name": "CES Customer",
+      "layer": 3,
+      "layerName": "Tăng Trưởng",
+      "description": "Khách hàng & Dịch vụ — chiến lược CX, SOP chăm sóc khách hàng, xử lý khiếu nại, khảo sát NPS, chương trình loyalty và dashboard chỉ số khách hàng",
+      "triggers": [
+        "chăm sóc khách hàng",
+        "nps survey",
+        "trải nghiệm khách hàng",
+        "xử lý khiếu nại",
+        "loyalty program",
+        "cx strategy"
+      ],
+      "documents": 12,
+      "outputPrefix": "CUS",
+      "dependsOn": ["ces-sales", "ces-operations"]
+    },
+    {
+      "id": "ces-product-tech",
+      "name": "CES Product Tech",
+      "layer": 4,
+      "layerName": "Tối Ưu Hóa",
+      "description": "Sản phẩm & Công nghệ — roadmap sản phẩm, quy trình NPD, PRD template, chính sách bảo mật IT, quản lý hạ tầng, backup dữ liệu và kế hoạch chuyển đổi số",
+      "triggers": [
+        "roadmap sản phẩm",
+        "chính sách it",
+        "tech stack",
+        "quản lý dự án công nghệ",
+        "bảo mật thông tin",
+        "chuyển đổi số",
+        "agile scrum"
+      ],
+      "documents": 13,
+      "outputPrefix": "PT",
+      "dependsOn": ["ces-strategy", "ces-operations"]
+    },
+    {
+      "id": "ces-training",
+      "name": "CES Training",
+      "layer": 4,
+      "layerName": "Tối Ưu Hóa",
+      "description": "Đào tạo & Phát triển — kế hoạch đào tạo năm, tài liệu onboarding, chương trình lãnh đạo nội bộ, individual development plan, mentoring/coaching và ROI đào tạo",
+      "triggers": [
+        "kế hoạch đào tạo",
+        "mentoring",
+        "phát triển nhân lực",
+        "onboarding nhân viên mới",
+        "individual development plan",
+        "chương trình đào tạo lãnh đạo"
+      ],
+      "documents": 10,
+      "outputPrefix": "TRN",
+      "dependsOn": ["ces-people", "ces-strategy"]
+    },
+    {
+      "id": "ces-reporting",
+      "name": "CES Reporting",
+      "layer": 4,
+      "layerName": "Tối Ưu Hóa",
+      "description": "Báo cáo & Đo lường — từ điển KPI, bộ chỉ số theo phòng ban, executive dashboard, template báo cáo BGĐ, balanced scorecard và hệ thống cảnh báo sớm",
+      "triggers": [
+        "từ điển kpi",
+        "dashboard",
+        "báo cáo quản trị",
+        "đo lường hiệu suất",
+        "balanced scorecard",
+        "early warning system",
+        "kpi dictionary"
+      ],
+      "documents": 10,
+      "outputPrefix": "RPT",
+      "dependsOn": ["ces-finance", "ces-people", "ces-operations", "ces-sales"]
+    },
+    {
+      "id": "ces-growth",
+      "name": "CES Growth",
+      "layer": 5,
+      "layerName": "Mở Rộng",
+      "description": "Tăng trưởng & Đầu tư — pitch deck gọi vốn, tài liệu due diligence, kế hoạch tài chính 5 năm, nhượng quyền thương mại, mở chi nhánh, M&A và chiến lược mở rộng quốc tế",
+      "triggers": [
+        "pitch deck",
+        "gọi vốn",
+        "nhượng quyền",
+        "mở rộng kinh doanh",
+        "m&a",
+        "ipo",
+        "mở chi nhánh",
+        "due diligence"
+      ],
+      "documents": 12,
+      "outputPrefix": "GRW",
+      "dependsOn": ["ces-strategy", "ces-finance", "ces-reporting"]
+    }
+  ],
+  "layerDependencyOrder": [0, 1, 2, 3, 4, 5],
+  "documentNamingConvention": {
+    "format": "[TimeCode] [DocType] - [DocumentName] - [DeptCode-Version].[ext]",
+    "timeCodes": {
+      "STANDARD": "Tài liệu thường trực, không theo kỳ",
+      "YYYY": "Tài liệu theo năm (vd: 2026)",
+      "YYYY-QX": "Tài liệu theo quý (vd: 2026-Q3)",
+      "YYYY-MM": "Tài liệu theo tháng (vd: 2026-05)"
+    },
+    "docTypeCodes": {
+      "POL": "Policy — Chính sách",
+      "SOP": "Standard Operating Procedure — Quy trình chuẩn",
+      "QC": "Quality Control — Kiểm soát chất lượng",
+      "FRM": "Form — Biểu mẫu",
+      "KH": "Kế hoạch",
+      "BC": "Báo cáo",
+      "BB": "Biên bản",
+      "JD": "Job Description — Mô tả công việc",
+      "HĐ": "Hợp đồng",
+      "TL": "Tài liệu đào tạo",
+      "DB": "Dashboard"
+    },
+    "examples": [
+      "STANDARD POL - Nội Quy Lao Động - NS-v1.0.docx",
+      "2026 KH - Kế Hoạch Kinh Doanh Năm 2026 - BGĐ.xlsx",
+      "2026-Q3 BC - Báo Cáo Doanh Thu Q3 - KD.xlsx",
+      "2026-05 KH - Content Calendar Tháng 5 - MKT.xlsx"
+    ]
+  },
+  "folderStructure": {
+    "rootPattern": "[TenCongTy] - He Thong Tai Lieu",
+    "folders": [
+      "00-Quan-Tri-Dieu-Hanh",
+      "01-Phap-Ly-Quan-Tri",
+      "02-Chien-Luoc-Kinh-Doanh",
+      "03-Tai-Chinh-Ke-Toan",
+      "04-Nhan-Su-HR",
+      "05-Van-Hanh-Hanh-Chinh",
+      "06-Kinh-Doanh-Ban-Hang",
+      "07-Marketing-Thuong-Hieu",
+      "08-San-Pham-Cong-Nghe",
+      "09-Bao-Cao-Tang-Truong"
+    ]
+  }
+}
