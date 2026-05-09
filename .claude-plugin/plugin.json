@@ -1,6 +1,7 @@
 {
   "id": "ces-business-builder",
-  "name": "CES Business Builder",
+  "name": "ces-business-builder",
+  "displayName": "CES Business Builder",
   "version": "1.0.0",
   "description": "Bộ công cụ AI tạo 191 tài liệu vận hành doanh nghiệp theo 5 tầng quản trị — CES Global",
   "skills": [
