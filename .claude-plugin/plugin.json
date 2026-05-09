@@ -5,18 +5,96 @@
   "version": "1.0.0",
   "description": "Bộ công cụ AI tạo 191 tài liệu vận hành doanh nghiệp theo 5 tầng quản trị — CES Global",
   "skills": [
-    { "id": "ces-orchestrator", "name": "CES Orchestrator", "path": "ces-orchestrator" },
-    { "id": "ces-governance", "name": "CES Governance", "path": "ces-governance" },
-    { "id": "ces-strategy", "name": "CES Strategy", "path": "ces-strategy" },
-    { "id": "ces-finance", "name": "CES Finance", "path": "ces-finance" },
-    { "id": "ces-people", "name": "CES People", "path": "ces-people" },
-    { "id": "ces-operations", "name": "CES Operations", "path": "ces-operations" },
-    { "id": "ces-sales", "name": "CES Sales", "path": "ces-sales" },
-    { "id": "ces-marketing", "name": "CES Marketing", "path": "ces-marketing" },
-    { "id": "ces-customer", "name": "CES Customer", "path": "ces-customer" },
-    { "id": "ces-product-tech", "name": "CES Product Tech", "path": "ces-product-tech" },
-    { "id": "ces-training", "name": "CES Training", "path": "ces-training" },
-    { "id": "ces-reporting", "name": "CES Reporting", "path": "ces-reporting" },
-    { "id": "ces-growth", "name": "CES Growth", "path": "ces-growth" }
+    {
+      "id": "ces-orchestrator",
+      "name": "ces-orchestrator",
+      "displayName": "CES Orchestrator",
+      "description": "Điều phối tổng thể quy trình đóng gói doanh nghiệp — thu thập hồ sơ, lập kế hoạch và phân bổ 191 tài liệu theo 5 tầng quản trị",
+      "systemPromptFile": "ces-orchestrator/SKILL.md"
+    },
+    {
+      "id": "ces-governance",
+      "name": "ces-governance",
+      "displayName": "CES Governance",
+      "description": "Quản trị & Pháp lý — điều lệ công ty, quy chế nội bộ, hợp đồng mẫu và hồ sơ pháp lý theo Luật Doanh nghiệp 2020",
+      "systemPromptFile": "ces-governance/SKILL.md"
+    },
+    {
+      "id": "ces-strategy",
+      "name": "ces-strategy",
+      "displayName": "CES Strategy",
+      "description": "Chiến lược & Kế hoạch kinh doanh — SWOT, OKR, Business Model Canvas, kế hoạch 3 năm và lộ trình chiến lược",
+      "systemPromptFile": "ces-strategy/SKILL.md"
+    },
+    {
+      "id": "ces-finance",
+      "name": "ces-finance",
+      "displayName": "CES Finance",
+      "description": "Tài chính & Kế toán — ngân sách năm, cashflow 12 tháng, SOP thu chi và dashboard tài chính",
+      "systemPromptFile": "ces-finance/SKILL.md"
+    },
+    {
+      "id": "ces-people",
+      "name": "ces-people",
+      "displayName": "CES People",
+      "description": "Nhân sự & Con người — sơ đồ tổ chức, sổ tay nhân viên, quy chế lương thưởng và SOP tuyển dụng",
+      "systemPromptFile": "ces-people/SKILL.md"
+    },
+    {
+      "id": "ces-operations",
+      "name": "ces-operations",
+      "displayName": "CES Operations",
+      "description": "Hành chính & Vận hành — sổ tay vận hành, SOP mua hàng, quản lý kho và kiểm soát chất lượng",
+      "systemPromptFile": "ces-operations/SKILL.md"
+    },
+    {
+      "id": "ces-sales",
+      "name": "ces-sales",
+      "displayName": "CES Sales",
+      "description": "Kinh doanh & Bán hàng — chiến lược sales, quy trình bán hàng, kịch bản telesales và CRM pipeline",
+      "systemPromptFile": "ces-sales/SKILL.md"
+    },
+    {
+      "id": "ces-marketing",
+      "name": "ces-marketing",
+      "displayName": "CES Marketing",
+      "description": "Marketing & Thương hiệu — kế hoạch marketing năm, content calendar, SEO và social media",
+      "systemPromptFile": "ces-marketing/SKILL.md"
+    },
+    {
+      "id": "ces-customer",
+      "name": "ces-customer",
+      "displayName": "CES Customer",
+      "description": "Khách hàng & Dịch vụ — SOP chăm sóc khách hàng, xử lý khiếu nại, NPS và loyalty program",
+      "systemPromptFile": "ces-customer/SKILL.md"
+    },
+    {
+      "id": "ces-product-tech",
+      "name": "ces-product-tech",
+      "displayName": "CES Product Tech",
+      "description": "Sản phẩm & Công nghệ — roadmap sản phẩm, chính sách bảo mật IT và kế hoạch chuyển đổi số",
+      "systemPromptFile": "ces-product-tech/SKILL.md"
+    },
+    {
+      "id": "ces-training",
+      "name": "ces-training",
+      "displayName": "CES Training",
+      "description": "Đào tạo & Phát triển — kế hoạch đào tạo năm, onboarding, mentoring và ROI đào tạo",
+      "systemPromptFile": "ces-training/SKILL.md"
+    },
+    {
+      "id": "ces-reporting",
+      "name": "ces-reporting",
+      "displayName": "CES Reporting",
+      "description": "Báo cáo & Đo lường — từ điển KPI, executive dashboard và template báo cáo BGĐ",
+      "systemPromptFile": "ces-reporting/SKILL.md"
+    },
+    {
+      "id": "ces-growth",
+      "name": "ces-growth",
+      "displayName": "CES Growth",
+      "description": "Tăng trưởng & Đầu tư — pitch deck gọi vốn, nhượng quyền thương mại và chiến lược mở rộng",
+      "systemPromptFile": "ces-growth/SKILL.md"
+    }
   ]
 }
